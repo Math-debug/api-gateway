@@ -1,0 +1,20 @@
+server.port: 5555
+
+ribbon.eureka.enabled: false
+
+zuul.routes:
+ equipment:
+  url: http://localhost:9023
+  stripPrefix: false
+ equipmenttype:
+  url: http://localhost:9023
+  stripPrefix: false
+ user:
+  url: http://localhost:9023
+  stripPrefix: false
+ usergroup:
+  url: http://localhost:9023
+  stripPrefix: false
+ keepalive:
+  url: http://localhost:9023
+  stripPrefix: false
